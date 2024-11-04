@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="manifest" href="./app.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
@@ -14,9 +14,23 @@
     <link rel="apple-touch-icon" href="icons/apple-icon-180.png">
     <meta name="mobile-web-app-capable" content="yes">
   </head>
-  <body class="fullscreen">
+  <body>
+
     <div class="container">
-      <h1 class="title">Hello World!</h1>
+        <div class="clock">
+
+            <div class="seconds_bar"></div>
+            <div class="number_hours"></div>
+
+            <div class="hands_box">
+                <div class="hand hour"><i></i></div>
+                <div class="hand minute"><i></i></div>
+                <div class="hand second"><i></i></div>
+            </div>
+
+        </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
